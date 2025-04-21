@@ -1,0 +1,295 @@
+/* ---------------------------------- Reset CSS ---------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(168deg,rgb(2, 1, 2) 0%, rgb(122, 32, 32) 50%, rgba(245, 144, 2, 1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---------------------------------- Header ---------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background: linear-gradient(168deg,rgba(121, 2, 247, 1) 0%, rgba(247, 30, 30, 1) 50%, rgba(245, 144, 2, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 550;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    font-weight: bold;
+    background-color: rgb(255, 111, 0);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.head:hover{
+    box-shadow: 0px 0px 20px rgb(215, 143, 80);
+}
+
+/* ---------------------------------- Main ---------------------------------- */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content h1 span{
+    background: linear-gradient(168deg,rgba(121, 2, 247, 1) 0%, rgba(247, 30, 30, 1) 50%, rgba(245, 144, 2, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:nth-of-type(1){
+    font-size: 30px;
+    color: rgb(215, 143, 80);
+}
+
+.content p:nth-of-type(2){
+    font-size: 17px;
+    color: rgb(193, 179, 199);
+}
+
+.start:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgb(215, 143, 80);
+}
+
+.readMore{
+    background: transparent;
+    border: 2px solid rgb(215, 143, 80);
+    color: rgb(215, 143, 80);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.readMore::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(236, 116, 12);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.readMore:hover::before{
+    width: 100%;
+}
+
+.readMore:hover{
+    color: white;
+}
+
+.button_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 400px;
+    
+}
+
+.text{
+    font-size: 25px !important;
+    color: white !important;
+    text-align: left;
+}
+
+
+.design_tool{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 150px;
+    width: 400px;
+}
+
+
+.design{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px;
+    background-color: rgba(136, 96, 61, 0.763);
+    color: white;
+    text-align: left;
+    height: 150px;
+    width: 400px;
+}
+
+.design:hover{
+    box-shadow: 0px 8px 20px rgb(215, 143, 80);
+}
+
+.Code{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px;
+    background-color: rgba(136, 96, 61, 0.763);
+    color: white;
+    text-align: left;
+    height: 150px;
+    width: 400px;
+}
+
+.Code:hover{
+    box-shadow: 0px 8px 20px rgb(215, 143, 80);
+}
+
+.com{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px;
+    background-color: rgba(136, 96, 61, 0.763);
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: 140px;
+}
+
+.com:hover{
+    box-shadow: 0px 8px 20px rgb(215, 143, 80);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.fa-palette{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.fa-code{
+    position: absolute;
+    top: 20%;
+    left: 10%; 
+}
+
+.fa-comment{
+    position: absolute;
+    top: 20%;
+    left: 20%;  
+}
+
+.line{
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.629);
+    margin: 20px 0;
+}
+
+.setting{
+    text-align: center;
+}
+
+.icon-circle {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid; 
+    background-color: #d66910; 
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.icon-circle:hover{
+    background-color: rgb(215, 143, 80);
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
+}
+
+.end{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
