@@ -356,6 +356,32 @@ main{
         width: 300px;
         height: 350px;
     }
+
+    .button_content{
+        width: 300px;
+        height: 500px;
+    }
+
+    .design_tool{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .design{
+        width: 300px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .Code{
+        width: 300px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .com{
+        margin-top: 170px;
+    }
 }
 
 
