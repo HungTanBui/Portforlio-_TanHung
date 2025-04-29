@@ -181,7 +181,7 @@ main{
 
 .design{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
+    padding: 20px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -201,9 +201,9 @@ main{
     box-shadow: 0px 8px 20px rgb(215, 143, 80);
 }
 
-.Code{
+.code{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
+    padding: 20px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -219,13 +219,13 @@ main{
     width: 400px;
 }
 
-.Code:hover{
-    box-shadow: 0px 8px 20px rgb(215, 143, 80);
+.code:hover{
+    box-shadow: 0px 8px 20px rgb(215, 143, 80) !important;
 }
 
 .com{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
+    padding: 20px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -321,13 +321,38 @@ main{
     /* main{
         display: none;
     } */
-     .container header nav,
+     /* .container header nav, */
      .container header .button{
         display: none;
     }
 
+    nav{
+        position: fixed;
+        background-color: #d66910;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        padding: 20px;
+        z-index: 99;
+        transition: all 0.3s ease;
+    }
+
+    nav.active{
+        right: 0;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
     .bar{
         display: block;
+        position: relative;
+        z-index: 100;
     }
 
     main{
@@ -340,6 +365,14 @@ main{
     .content{
         justify-content: center;
         align-items: center;
+    }
+
+    .code{
+        width: 300px;
+    }
+
+    .code:hover{
+        box-shadow: 0px 8px 20px rgb(215, 143, 80) !important;
     }
 }
 

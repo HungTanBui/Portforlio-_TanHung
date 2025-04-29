@@ -23,7 +23,7 @@
         <header>
             <div class="logo">TanHung</div>
             <!-- navigation -->
-            <nav>
+            <nav id="mobile-nav">
                 <ul>
                     <li> <a href="">Home</a> </li>
                     <li> <a href="">About</a> </li>
@@ -37,14 +37,17 @@
                 </button>
 
                 <!-- Only show when the screen is 600px -->
-                <div class="bar"><i class="fa-solid fa-bars"></i></div>
+                <div id="menu-toggle" class="bar">
+                    <i id="bar-icon" class="fa-solid fa-bars"></i>
+                    <i style="display: none;" id="close-icon" class="fa-solid fa-xmark"></i>
+                </div>
             </div>
         </header>
 
         <main>
             <div class="content">
-                <h1>I'm. <span>Tan Hung</span></h1>
-                <p>Full Stack Developer</p>
+                <h1 id="title">I'm. <span>Tan Hung</span></h1>
+                <p id="des">Full Stack Developer</p>
                 <p>Start for Beginner Designer</p>
 
                 <div class="button_wrapper">
@@ -64,7 +67,7 @@
                             Learn popular design tools
                         </button>
     
-                        <button class="Code">
+                        <button class="code">
                             <p class="circle"><i class="fa-solid fa-code"></i></p>
                             <p class="text">Coding</p>
                             Basics of HTML & CSS
@@ -101,6 +104,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
