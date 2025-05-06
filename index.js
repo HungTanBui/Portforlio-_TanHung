@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded",function(){
     let mobileNav = document.getElementById("mobile-nav");
     let barIcon = document.getElementById("bar-icon");
     let closeIcon = document.getElementById("close-icon");
-
+    let headLogo = document.getElementById("head-logo");
+    
     menuToggle.addEventListener("click",function(){
         // Thêm class active vào mobile nav
         // Nếu đã có active thì bỏ đi, nếu chưa có thì thêm vào
@@ -25,10 +26,12 @@ document.addEventListener("DOMContentLoaded",function(){
         if(mobileNav.classList.contains("active")){
             barIcon.style.display = "none";
             closeIcon.style.display = "block";
+            headLogo.style.display = "none";
         }else{
             barIcon.style.display = "block";
             closeIcon.style.display = "none";
-        }
+            headLogo.style.display = "block";
+        }   
     });
 
 });
